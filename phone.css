@@ -1,0 +1,128 @@
+@media(max-width:600px){
+/* Navigation  */
+     #navbar{
+         flex-direction: column;
+     }
+     #navbar ul li a{
+         font: 1rem;
+         padding: 0px 7px;
+         padding-bottom: 8px;
+         font-size: 22px;
+     }
+     #logo img {
+        height: 73px;
+        margin: -17px -11px;
+    }
+
+/* Home Section */
+#home{
+   padding: 3px 68px;
+  height: 696px; 
+
+}
+#home p{
+    font-size: 13px;
+    width: 351px; 
+
+}
+#home::before{
+
+  height: 769px; 
+
+}
+ /* services section */
+#services{
+    flex-direction: column;
+}
+#services .box{
+ 
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 2px solid brown;
+        padding: 41px;
+        border-radius: 25px;
+        background-color: rgb(242, 242, 242);
+        margin: 14px 54px;
+        justify-content: space-evenly;
+    
+}
+
+/* clients section */
+#clients{
+    overflow: hidden;
+    flex: wrap;
+
+}
+#clients img{
+    margin: -31px;
+    flex: wrap;
+    width: 103px;
+    height: 143px;
+    padding: 2px 6px;
+}
+
+
+/* contact section */
+#contact-box{ 
+padding: 0;
+box-sizing: border-box;
+margin-top: 147px;
+font-size: 3rem;
+padding: 13px;
+font-family: 'Bree Serif', serif;
+}
+
+#contact::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(/contact.jpg) no-repeat center center/cover;
+    margin-top: 118px;
+}
+
+/* Footer */
+
+/* Utility classes */
+
+.h-primary{
+    font-size: 36px;
+    margin-top: 60px;
+    padding: 13px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+}
+@media(max-width:400px){
+    #home h1{
+        font-size: 3rem;
+    }
+    .client-item{
+        padding: 0px;
+    }
+    #clients img{
+        height: 100px;
+        width: 70px;
+        margin:0px;
+    }
+    #contact{
+        margin-top: -7rem;
+    }
+    #contact-box form {
+        width: 100%;
+    }
+    #contact{
+        padding-top:3rem;
+      
+    }
+    #services .box{
+        margin: 20px 10px;
+    }
+}
